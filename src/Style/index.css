@@ -7,6 +7,7 @@
   --text-transform-cap: capitalize;
   --white: #f1f1f0;
   --font-color: #333;
+  --padding-sesions: 50px 0;
 }
 * {
   padding: unset;
@@ -49,3 +50,88 @@ body {
 /* start home */
 
 /* end home */
+.slider-content {
+  display: flex;
+  gap: 40px;
+  padding: var(--padding-sesions);
+}
+.right,
+.left {
+  width: 591.5px;
+}
+.left .content {
+  color: var(--font-color);
+}
+.topTitle {
+  font-size: 160px;
+}
+/* .subTitle {
+  font-size: 20px;
+} */
+.img-container {
+  border-radius: 0.8rem;
+  min-height: 20rem;
+  overflow: hidden;
+  width: 100%;
+}
+.img-container img {
+  max-width: 100%;
+  height: auto;
+}
+.right-img {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* start discount */
+.discount-session {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.container-discount {
+  display: flex;
+  justify-content: center;
+  background: #e1e1e1;
+  /* width: 100%; */
+  padding: 3rem;
+}
+.contant-discount {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+.left-discount-section .topTitle-discount {
+  font-size: 2.8em;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+.left-discount-section .subTitle-discount {
+  color: #51565b;
+}
+.topTitle-discount strong {
+  right: 0;
+  bottom: -42px;
+  font-family: var(--extra-font);
+  font-size: 5.8em;
+  color: var(--gray-color-200);
+  z-index: 1;
+  color: #c8c7c7;
+}
+.topTitle-discount small {
+  font-size: 3.8em;
+  font-weight: bolder;
+  color: #c8c7c7;
+}
+.btn-container {
+  position: relative;
+}
+.btn-container button {
+  position: absolute;
+}
+/* end discount */
