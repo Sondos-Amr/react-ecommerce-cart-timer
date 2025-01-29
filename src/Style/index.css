@@ -96,7 +96,6 @@ body {
 .container-discount {
   display: flex;
   justify-content: center;
-  background: #e1e1e1;
   /* width: 100%; */
   padding: 3rem;
 }
@@ -105,7 +104,7 @@ body {
   justify-content: space-between;
   width: 90%;
 }
-.left-discount-section .topTitle-discount {
+.left-discount-section .topTitle-discount-left {
   font-size: 2.8em;
   font-weight: 700;
   line-height: 1;
@@ -114,25 +113,28 @@ body {
 .left-discount-section .subTitle-discount {
   color: #51565b;
 }
-.topTitle-discount strong {
-  right: 0;
-  bottom: -42px;
+.topTitle-discount-right strong {
+  /* right: 0;
+  bottom: -42px; */
   font-family: var(--extra-font);
   font-size: 5.8em;
   color: var(--gray-color-200);
   z-index: 1;
   color: #c8c7c7;
 }
-.topTitle-discount small {
+.topTitle-discount-right small {
   font-size: 3.8em;
   font-weight: bolder;
   color: #c8c7c7;
 }
 .btn-container {
-  position: relative;
+  /* position: relative; */
+}
+.contant-discount {
+  background: #e1e1e1;
 }
 .btn-container button {
-  position: absolute;
+  /* position: absolute; */
   padding: 0.8em 2.5em;
   font-size: 1.1em;
   letter-spacing: 2px;
@@ -140,4 +142,63 @@ body {
   color: white;
   border: none;
 }
+.right-discount-section {
+  position: relative;
+}
+.btn-container {
+  position: relative;
+  right: 50%;
+}
+.topTitle-discount-right {
+  position: relative;
+}
 /* end discount */
+/* start featured-products */
+.cards-container {
+  display: flex;
+  width: 100%;
+  gap: 15px;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.cards {
+  width: 90%;
+  margin: 0 auto;
+}
+.card-container {
+  width: 100%;
+}
+.card-img {
+  width: inherit;
+}
+.cards-container .img-contant {
+  width: 100%;
+}
+.cards-container .img-contant img {
+  max-width: 100%;
+}
+.cards .card-topTitle {
+  /* text-align: center; */
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.33rem;
+  text-transform: uppercase;
+}
+.card-detail {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.card-title {
+  font-size: 15px;
+  font-weight: 400;
+}
+.card-price {
+  color: #333;
+  font-weight: 700;
+}
+/* font-size: 1rem !important;
+font-w 400 */
+/* end featured-products */
