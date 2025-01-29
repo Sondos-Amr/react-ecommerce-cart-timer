@@ -25,12 +25,12 @@ function LeftDiscount() {
 function RightDiscount() {
   return (
     <div className="right-discount-section">
+      <div className="btn-container">
+        <button>Email me</button>
+      </div>
       <div className="topTitle-discount-right">
         <small>10</small>
         <strong>% OFF</strong>
-      </div>
-      <div className="btn-container">
-        <button>Email me</button>
       </div>
     </div>
   );
