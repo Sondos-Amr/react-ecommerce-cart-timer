@@ -199,6 +199,38 @@ body {
   color: #333;
   font-weight: 700;
 }
-/* font-size: 1rem !important;
-font-w 400 */
+.card-img {
+  position: relative;
+}
+
+.card-container:hover .icons-featured {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
+}
+
+.icons-featured {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translate(-50%, 10px);
+  display: flex;
+  gap: 20px;
+}
+
+.icons-featured button {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease-out;
+}
+.icons-featured button:hover {
+  transform: translate3d(0, -0.5rem, 0);
+}
+
 /* end featured-products */

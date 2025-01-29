@@ -30,16 +30,12 @@ function Card({ key, img, cardTitle, cardPrice }) {
             <img src={img} alt="soon" />
           </div>
           <div className="icons-featured">
-            <li>
-              <a href="#">
-                <i class="fa-light fa-bag-shopping"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </a>
-            </li>
+            <button>
+              <i class="fa-solid fa-bag-shopping"></i>
+            </button>
+            <button>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
           </div>
         </div>
         <div className="card-detail">
