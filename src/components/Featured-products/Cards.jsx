@@ -1,18 +1,18 @@
 import TopTitle from "./topTitle";
-export default function Cards() {
+export default function Cards({ topTitle, dataCards }) {
+  if (!dataCards) return <div>No products available</div>;
   return (
     <div className="cards">
-      <TopTitle topTitle="Featured Products" />
-      <CardsContainer />
+      <TopTitle topTitle={topTitle} />
+      <CardsContainer dataCards={dataCards} />
     </div>
   );
 }
-function CardsContainer() {
+function CardsContainer({ dataCards }) {
   return (
     <div className="cards-container">
-      {dataCards.map((card, index) => (
+      {dataCards.map((card) => (
         <Card
-          key={index}
           img={card.img}
           cardTitle={card.cardTitle}
           cardPrice={card.cardPrice}
@@ -21,10 +21,10 @@ function CardsContainer() {
     </div>
   );
 }
-function Card({ key, img, cardTitle, cardPrice }) {
+function Card({ img, cardTitle, cardPrice }) {
   return (
     <div className="card">
-      <li key={key} className="card-container">
+      <li className="card-container">
         <div className="card-img">
           <div className="img-contant">
             <img src={img} alt="soon" />
@@ -46,31 +46,3 @@ function Card({ key, img, cardTitle, cardPrice }) {
     </div>
   );
 }
-
-const dataCards = [
-  {
-    img: "/assets/featured-products/card-item1.jpg",
-    cardTitle: "Running shoes for men",
-    cardPrice: "$99",
-  },
-  {
-    img: "/assets/featured-products/card-item2.jpg",
-    cardTitle: "Running shoes for men",
-    cardPrice: "$99",
-  },
-  {
-    img: "/assets/featured-products/card-item3.jpg",
-    cardTitle: "Running shoes for men",
-    cardPrice: "$99",
-  },
-  {
-    img: "/assets/featured-products/card-item4.jpg",
-    cardTitle: "Running shoes for men",
-    cardPrice: "$99",
-  },
-  {
-    img: "/assets/featured-products/card-item5.jpg",
-    cardTitle: "Running shoes for men",
-    cardPrice: "$99",
-  },
-];
