@@ -4,6 +4,7 @@ import Discount from "./components/Discount/Discount";
 import FeaturedProducts from "./components/Featured-products/Featured-products";
 import CollectionProducts from "./components/Collection-products/CollectionProducts";
 import LastProducts from "./components/Latest-products/Last-products";
+import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <div className="App">
@@ -13,6 +14,7 @@ function App() {
       <FeaturedProducts />
       <CollectionProducts />
       <LastProducts />
+      <Footer />
     </div>
   );
 }
