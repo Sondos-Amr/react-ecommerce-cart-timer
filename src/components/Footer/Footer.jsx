@@ -3,11 +3,18 @@ export default function Footer() {
     <footer>
       <div className="container container-footer">
         <FooterList />
+        <CopyRight />
       </div>
     </footer>
   );
 }
-
+function CopyRight() {
+  return (
+    <div className="copyright-container">
+      <span className="copyright-contant">© Copyright Stylish 2023.</span>
+    </div>
+  );
+}
 function FooterList() {
   return (
     <div className="footer-list">

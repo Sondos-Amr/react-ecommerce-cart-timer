@@ -288,4 +288,8 @@ footer {
   color: #777;
   line-height: 1.6;
 }
+.copyright-contant {
+  color: #777;
+  padding: 24px;
+}
 /* end footer */
