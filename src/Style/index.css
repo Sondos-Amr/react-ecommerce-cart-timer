@@ -143,13 +143,23 @@ body {
   background: black;
   color: white;
   border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn-container button:hover {
+  background-color: #2980b9;
+  transform: scale(1.1);
 }
 .right-discount-section {
   position: relative;
 }
 .btn-container {
   position: relative;
-  right: 50%;
+
+  top: 40%;
+  z-index: 1;
+  left: 25%;
 }
 .topTitle-discount-right {
   position: relative;
