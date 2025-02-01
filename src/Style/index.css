@@ -257,3 +257,25 @@ body {
   border-radius: 10px;
 }
 /* end collection-productes */
+/* start footer */
+footer {
+  padding: 3rem 0 3rem 0;
+}
+.footer-content {
+  display: flex;
+}
+.footer-content ul {
+  width: 17%;
+  padding: 10px;
+}
+.footer-content ul li:first-child {
+  padding-bottom: 0.5rem !important;
+  font-weight: 700;
+  color: black;
+}
+.footer-content ul li {
+  padding-bottom: 0.5rem !important;
+  color: #777;
+  line-height: 1.6;
+}
+/* end footer */
